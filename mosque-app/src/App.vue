@@ -1,13 +1,17 @@
 <script setup lang="ts">
+import Menu from 'primevue/menu';
 
 </script>
 
 <template>
+  <Menu ></Menu>
   <header>
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
       </nav>
+
+
   </header>
 
   <RouterView />

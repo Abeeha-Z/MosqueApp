@@ -13,10 +13,11 @@ app.use(PrimeVue, {
     theme: {
         preset: Aura,
         options: {
-            
+        ripple: true,
+        inputStyle: 'outlined',
+        unstyled: false    
     }
-
-    }
+}
 });
 
 app.use(createPinia())
