@@ -10,7 +10,7 @@ import Menu from 'primevue/menu';
     <RouterLink class="font-bold text-[120%]" to="/contacts">Contacts</RouterLink>
     <RouterLink class="font-bold text-[120%]" to="/lessons">Lessons</RouterLink>
     <RouterLink class="font-bold text-[120%]" to="/register">Registeration</RouterLink>
-    <button class="font-bold text-[120%] py-2 px-5 bg-amber-400 rounded-2xl">Login</button>
+    <button class="cursor-pointer font-bold text-[120%] py-2 px-5 bg-amber-400 rounded-2xl">Login</button>
   </nav>
   <RouterView />
 </template>
