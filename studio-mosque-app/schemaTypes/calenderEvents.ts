@@ -5,8 +5,8 @@ export default defineType({
     type: 'document',
     fields: [
         defineField({
-            name: 'title',
-            title: 'title',
+            name: 'event_title',
+            title: 'Event',
             type: 'string',
             validation: Rule => Rule.required(),
         }),
@@ -15,6 +15,18 @@ export default defineType({
             title: 'Date',
             type: 'date',
             validation: Rule => Rule.required(),
+            options: {
+            dateFormat: 'hh:mm A', // yyyy/mm/dd
+  }
+        }),
+        defineField({
+            name: 'time',
+            title: 'Time',
+            type: 'datetime', 
+            validation: Rule => Rule.required(),
+            options: {
+            timeFormat: 'hh:mm A', // hh:mm for 24-hour, hh:mm A for 12-hour with AM/PM
+  }
         }),
         defineField({
             name: 'description',

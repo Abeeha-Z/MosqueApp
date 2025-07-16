@@ -35,7 +35,14 @@ export default defineType({
             validation: Rule => Rule.required(),
             options: {
                 list: [
-                    {title: '', value: ''}
+                    {title: 'Islamic History', value: 'islamic_history'},
+                    {title: 'Salah', value: 'salah'},
+                    {title: 'Islamic Studies', value: 'islamic_studies'},
+                    {title: 'Arabic', value: 'arabic'},
+                    {title: 'Surahs', value: 'surahs'},
+                    {title: 'Tafseer', value: 'tafseer'},
+                    {title: 'Contemporary Issues', value: 'c_issues'},
+                    {title: 'Hadith', value: 'hadith'},
                 ]
             }
         }),
