@@ -8,6 +8,6 @@
 import navbar from '~/components/appLayout/navbar.vue';
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" scoped>  
 
 </style>
