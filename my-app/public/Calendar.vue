@@ -5,14 +5,12 @@
 </template>
 
 <script lang="ts" setup>
-import {sanity} from 
-
+import { onMounted } from 'vue'
 const events = ref([])
 
 onMounted(async () => {
-  events.value = await sanity.fetch(`*[_type == "Calender_event"] | order(date asc)`)
+const { data:events } = await useSanityQuery(`*[_type == "lesson"]{ title, slug }`)
 })
 
-//need to access sanity schemas, create shared directory, use root path (~~?), or define sanity client inside nuxt as specified in sanity docs
 
 </script>
